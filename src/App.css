@@ -28,6 +28,7 @@
     }
 }
 
+
 .header-bar {
   background: #444649;
   height: 4px;
@@ -94,16 +95,16 @@ a {
 }
 
 .contactContainer {
-  padding-bottom: 100vh; 
   color: #fff;
 }
 
 .contactSvg {
-  background: #252934; 
   position: absolute;
+  background: #252934;
 }
 .contactContent {
   background: #252934;
+  padding-bottom: 100px;
 }
 .contactBar {
   animation-delay: 0.5s;
@@ -113,6 +114,42 @@ a {
   font-size: 1rem;
   color: #04c2c9;
 }
+.footerContainer {
+  background: #1b242f;
+  padding: 30px 0 50px 0;
+}
+
+.icon {
+  background: #262f38;
+    cursor: pointer;
+    font-size: 18pt;
+    height: 55px;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    width: 55px;
+}
+
+footer .footnote {
+  color: #8f9aa7;
+  font-size: 10pt;
+  margin-top: 35px;
+  opacity: 0.6;
+}
+
+footer .footnote .highlight {
+  color: #e31b6d;
+  font-family: "Open Sans";
+}
+
+.upArrowIcon {
+  background: #e31b6d;
+  margin-top: -52.5px;
+  margin-bottom: 52.5px;
+}
+
 body::-webkit-scrollbar {
     width: 1.1em;
   }

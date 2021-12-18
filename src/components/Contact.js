@@ -33,15 +33,21 @@ const Contact = () => {
     };
 
     return (
-        <div className="contactContentContainer container text-left ml-lg-0">
-            <div id="inputEmail" role="group" className="form-group pt-3">
-                <label id="inputEmailLabel" for="inputEmail" className="d-block contentContainerLabelText ">
+        <div className="container text-left w-25">
+            <div id="inputName" role="group" className="form-group pt-3">
+                <label id="inputEmailLabel" for="inputName" className="d-block  ">
+                    Name
+                </label>
+                <input id="inputName" type="name" placeholder="Your Name" required="required" aria-required="true" className="form-control" value={email} onChange={e => setEmail(e.target.value)}></input>
+            </div>
+            <div id="inputEmail" role="group" className="form-group ">
+                <label id="inputEmailLabel" for="inputEmail" className="d-block  ">
                     Email Address
                 </label>
                 <input id="inputEmail" type="email" placeholder="Enter email" required="required" aria-required="true" className="form-control" value={email} onChange={e => setEmail(e.target.value)}></input>
             </div>
             <div id="inputMessage" role="group" className="form-group">
-                <label id="inputMessageLabel" for="inputMessage" className="d-block contentContainerLabelText">
+                <label id="inputMessageLabel" for="inputMessage" className="d-block ">
                     Message
                 </label>
                 <textarea id="inputMessage" type="email" placeholder="Enter your Message" required="required" aria-required="true" className="form-control" value={message} onChange={e => setMessage(e.target.value)}></textarea>

@@ -16,7 +16,10 @@ function App() {
               <h1 className="fw-bold text-white m-0">.</h1>
             </div>
             <h1 className="fw-bold text-white m-0">I'm a Software Engineer.</h1>
+            <button class="btn btn-primary mt-2" type="submit">View my work <i class="fas fa-arrow-down"></i></button>
+              
           </div>
+          
         </div>
       </div>
 
@@ -262,27 +265,57 @@ function App() {
       </div>
 
       {/* <!-- Contact -->  */}
-      <div className="contentSpacing contactBg contactContainer " >
-        <svg className="contactContent" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+      <div className="contactBg contactContainer " >
+      <div className='contactContent'>
+      <svg className="contactSvg" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
           <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-        </svg>
+        </svg> 
+        </div>
         <div className="contactContent">
-          <div className="d-flex flex-column justify-content-center align-items-center pt-5" >
+          <div className=" d-flex flex-column justify-content-center align-items-center pt-5" >
             <h1>CONTACT</h1>
             <div className="header-bar waypoint animated slide-in-left contactBar" data-animation="slide-in-left" data-delay=".5s"
             ></div>
           </div>
           <div>
-            <h5 className="d-flex flex-column justify-content-center align-items-center contactTitle">If you have any questions or inquiries please leave a Message!</h5>
+            <h5 className="d-flex flex-column justify-content-center align-items-center contactTitle">If you have any Questions or Inquiries please leave a Message!</h5>
           </div>
           <div>
             <Contact />
           </div>
         </div>
       </div>
-      <footer >
-        <div className="">
-          &copy; 2021 - Ramon Amini Portfolio
+      <footer className="container-fluid d-flex flex-column justify-content-center align-items-center footerContainer">
+      <div class="icon d-flex flex-column justify-content-center align-items-center upArrowIcon" id="icon-1">
+        <i class="fas fa-arrow-up text-light"></i>
+      </div>
+
+        <div class="row">
+          <a href="https://www.linkedin.com/in/ramon_amini">
+            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-2">
+            <i class="fab fa-linkedin-in text-light"></i>
+            </div>
+          </a>
+          <a href="Resume">
+            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-3">
+            <i class="fal fa-file-user text-light"></i>
+            </div>
+          </a>
+          <a href="https://instagram.com/ramon_amini/">
+            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-4">
+            <i class="fab fa-instagram text-light"></i>
+            </div>
+          </a>
+          <a href="http://github.com/raaamonnn/">
+            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-5">
+              <i class="fab fa-github text-light"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="footnote">
+            RAMON AMINI <span class="highlight">©2021</span>
+          </div>
         </div>
       </footer>
 
