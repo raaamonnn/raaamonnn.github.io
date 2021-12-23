@@ -3,14 +3,16 @@ import { init } from 'emailjs-com';
 import React, { useState } from 'react'
 init("user_6zjWRKDpnvozhHSff7rNn");
 const Contact = () => {
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-
+    
     const submit = () => {
-        if (email && message && isValidEmail()) {
-            const serviceId = 'service_203u2ei';
-            const templateId = 'template_agfu944';
+        if (name && email && message && isValidEmail()) {
+            const serviceId = 'service_hyjzrtr';
+            const templateId = 'template_8m99vwl';
             const templateParams = {
+                name,
                 email,
                 message
             };
@@ -19,7 +21,8 @@ const Contact = () => {
                 .then(response => console.log(response))
                 .then(error => console.log(error));
 
-            alert("Thank you for your message, we will be in touch in no time!")
+            alert("Thank you for your message, I will be in touch in no time!")
+            setName('');
             setEmail('');
             setMessage('');
         } else {
@@ -33,12 +36,12 @@ const Contact = () => {
     };
 
     return (
-        <div className="container text-left w-25">
+        <div className="container text-left dynamicWidth25">
             <div id="inputName" role="group" className="form-group pt-3">
-                <label id="inputEmailLabel" for="inputName" className="d-block  ">
+                <label id="inputNameLabel" for="inputName" className="d-block  ">
                     Name
                 </label>
-                <input id="inputName" type="name" placeholder="Your Name" required="required" aria-required="true" className="form-control" value={email} onChange={e => setEmail(e.target.value)}></input>
+                <input id="inputName" type="name" placeholder="Your Name" required="required" aria-required="true" className="form-control" value={name} onChange={e => setName(e.target.value)}></input>
             </div>
             <div id="inputEmail" role="group" className="form-group ">
                 <label id="inputEmailLabel" for="inputEmail" className="d-block  ">
