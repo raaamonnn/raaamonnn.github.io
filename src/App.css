@@ -115,9 +115,27 @@ a {
     color: #555555;
 }
 
+.w-65 {
+    width: 65%;
+}
+
+.w-60 {
+    width: 60%;
+}
+.w-55 {
+    width: 55%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-35 {
+    width: 35%;
+}
 .w-15 {
     width: 15%;
 }
+
+
 
 .progressHeight {
     height: 40px;
