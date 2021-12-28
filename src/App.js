@@ -92,7 +92,7 @@ function App() {
             <div className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center">
               <img src={me} width="300px" className="rounded" alt="A picture of me"></img>
               <h2 className="text-center pt-3">Who's Ramon?</h2>
-              <p className="text-center">I was born and raised in Germany until I moved to California, Orange County in July of 2014. Fighting adversity and beating the odds, my family and I are still pursuing the American Dream. I am currently a Senior at the California State University Fullerton as a Computer Science Major. I'll be graduating after this Spring semester and I am looking for a Software Engineering role. I've built professional iOS applications, Websites, and Web Applications for customers in a Scrum based team environment.</p>
+              <p className="text-center description">I was born and raised in Germany until I moved to California, Orange County in July of 2014. Fighting adversity and beating the odds, my family and I are still pursuing the American Dream. I am currently a Senior at the California State University Fullerton as a Computer Science Major. I'll be graduating after this Spring semester and I am looking for a Software Engineering role. I've built professional iOS applications, Websites, and Web Applications for customers in a Scrum based team environment.</p>
             </div>
             <div className="col-xl d-flex flex-column bd-highlight justify-content-center w-100 deviceAdjustment" >
               
@@ -147,7 +147,7 @@ function App() {
             </div>
           </div>
 
-          <div className="row justify-content-around bd-highlight pt-5">
+          <div className="row justify-content-around bd-highlight pt-5 pb-5">
             <div className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1500">
               <i className="fas fa-code fa-6x text-primary"></i>
               <h1 className="pt-2 aboutColor">Concise</h1>
@@ -175,7 +175,7 @@ function App() {
           </div>
 
           <div className="row" >
-            <div className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center">
+            <div className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
           <h1 className="text-center">Personal Interests</h1>
               <p className="text-center">When I am not coding my next project, I enjoy spending my time doing any of the following:</p>
               <ul>
