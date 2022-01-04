@@ -218,7 +218,7 @@ a {
 }
 
 .dynamicWidth25 {
-    width: 25%;
+    width: 40%;
 }
 
 @media (min-width: 0px) and (max-width: 768px) { 
@@ -226,6 +226,6 @@ a {
         height: 250px;
     }
     .dynamicWidth25 {
-        width: 50%;
+        width: 80%;
     }
 }

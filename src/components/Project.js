@@ -4,7 +4,7 @@ const Project = ({ title, pageLink, videoLink, infoTitle, infoText, infoSecondTi
         <>
             <div className="row justify-content-center align-items-center bd-highlight pl-5 pr-5">
                 <a href={pageLink}  target="_blank" rel="noopener noreferrer">
-                  <h1 className="">{title}</h1>
+                  <h1 className="text-center">{title}</h1>
                 </a>
               </div>
               <div className="row justify-content-around bd-highlight pl-5 pr-5">
