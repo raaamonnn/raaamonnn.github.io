@@ -223,7 +223,7 @@ function App() {
             infoTitle="About" 
             infoText="MusoLive is an interactive platform for fans to interact with musicians. For my Capstone Project, we created a React based Web Application for this Company that Utilizes Mux for its Streaming and Video Playback functionality. The app allows the user to trim and save video clips at will. For this, we use the Mux API to store and process videos." 
             infoSecondTitle="Technology" 
-            infoSecondText="Our Web Application uses ReactJS as its Front End framework which allowed us to soley focus on Figuring out the Mux API and integrating it into our Application. We are using NodeJS, allowing us to use the Official Mux API wrapper that fortunately Supports Mux Video, making it a breeze for us to implement."/>
+            infoSecondText="Our Web Application uses ReactJS as its Front End framework which allowed us to soley focus on Figuring out the Mux API and integrating it into our Application. We are using NodeJS, allowing us to use the Official Mux API wrapper, making it a breeze for us to implement."/>
             </div>
 
             <div className="carousel-item">
