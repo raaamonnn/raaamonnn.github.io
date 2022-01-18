@@ -80,6 +80,17 @@
     background: #e2e2e2!important;
 }
 
+.cardStyle2 {
+    background: #252934!important;
+    border-radius: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cardStyle2:hover {
+    background: #313747!important;
+}
+
 span.carousel-control-next-icon {
     background-image: url("https://img.icons8.com/ios-filled/50/000000/circled-right-2.png");
     width: 50px;
@@ -219,6 +230,9 @@ a {
 
 .dynamicWidth25 {
     width: 40%;
+}
+.personalInterests {
+    margin-top: 200px;
 }
 
 @media (min-width: 0px) and (max-width: 768px) { 

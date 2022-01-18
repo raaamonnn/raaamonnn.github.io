@@ -1,9 +1,9 @@
 import './App.css';
-import me from './me.jpg';
+import me from './assets/me.jpg';
 import Contact from './components/Contact'
 import $ from 'jquery';
 import Project from './components/Project';
-
+import resume from './assets/2022Resume.pdf'
 function App() {
 
   //Dynamic Fixed Navigation Bar
@@ -22,7 +22,9 @@ function App() {
     });
   });
 
-  //dynamic active navitem
+ 
+  $( document ).ready(function() {
+     //dynamic active navitem
   $(".nav-item").on("click", function(e){
     // Remove class active form all li.nav-tiem
     $("li.nav-item").removeClass("active");
@@ -30,6 +32,11 @@ function App() {
     $(this).addClass("active");
   });
 
+    //cancel auto caroussel
+    $('.carousel').carousel({
+    interval: false
+  }) });
+  
   return (
     <div >
       {/* <!-- Home --> */}
@@ -161,37 +168,22 @@ function App() {
             <div className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1500">
               <i className="fas fa-cubes fa-6x text-success"></i>
               <h1 className="pt-2 aboutColor text-center" >Problem Solving</h1>
-              <p className="text-center aboutColor" > Create Efficient Algorithms. Divide and Conquer using Abstraction.
+              <p className="text-center aboutColor" > Create Efficient Algorithms. Divide and Conquer using Abstraction
               </p>
             </div>
             <div className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1500">
               <i className="fas fa-shield-alt fa-6x text-warning"></i>
               <h1 className="pt-2 aboutColor" >Security</h1>
-              <p className="text-center aboutColor" >Best Practices and Secure Software Development from Inception.
+              <p className="text-center aboutColor" >Best Practices and Secure Software Development from Inception
               </p>
             </div>
             <div className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1500">
               <i className="fab fa-medapps fa-6x text-info"></i>
               <h1 className="pt-2 aboutColor" >Algorithms</h1>
-              <p className="text-center aboutColor">Efficient Algorithms using Best Performing Datastructures.
+              <p className="text-center aboutColor">Efficient Algorithms using Best Performing Data Structures
               </p>
             </div>
           </div>
-
-          <div className="row" >
-            <div className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
-          <h1 className="font-weight-bold text-center">Personal Interests</h1>
-              <p className="text-center">When I am not coding my next project, I enjoy spending my time doing any of the following:</p>
-              <ul>
-                <li>Hanging out with Friends and Meeting new People</li>
-                <li>Video Games</li>
-                <li>Waterpolo</li>
-                <li>Soccer</li>
-                <li>Surfing</li>
-              </ul>
-              <p className="text-center mb-5">If you couldn't already tell, I Love Sports!</p>
-            </div>
-            </div>
         </div>
       </div>
 
@@ -202,7 +194,7 @@ function App() {
           <div className="header-bar waypoint animated slide-in-left" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500"
           ></div>
         </div>
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-aos="zoom-in-up" data-aos-duration="1700" data-aos-delay="2000">
+        <div id="carouselExampleIndicators" className="carousel slide" data-interval="false" data-aos="zoom-in-up" data-aos-duration="1700" data-aos-delay="2000">
           <ol className="carousel-indicators mt-5">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -255,6 +247,22 @@ function App() {
             <span className="sr-only">Next</span>
           </a>
         </div>
+        <div id="projects" className="container">
+        <div className="row personalInterests" >
+          <div className="text-light col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle2" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1500">
+              <h1 className="font-weight-bold text-center pt-4">Personal Interests</h1>
+              <p className="text-center contactTitle">When I am not coding my next project, I enjoy spending my time doing any of the following:</p>
+              <ul>
+                <li>Hanging out with Friends and Meeting new People</li>
+                <li>Video Games</li>
+                <li>Waterpolo</li>
+                <li>Soccer</li>
+                <li>Surfing</li>
+              </ul>
+              <p className="text-center mb-5">If you couldn't already tell, I Love Sports!</p>
+          </div>
+        </div>
+        </div>
       </div>
 
       {/* <!-- Contact -->  */}
@@ -293,7 +301,7 @@ function App() {
               <i class="fab fa-linkedin-in text-light"></i>
             </div>
           </a>
-          <a href="Resume" target="_blank" rel="noopener noreferrer">
+          <a href={resume} download="RamonAminiResume" target="_blank" rel="noopener noreferrer">
             <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-3">
               <i class="fal fa-file-user text-light"></i>
             </div>
