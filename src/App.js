@@ -151,7 +151,7 @@ function App() {
               </div>
               <div className="progress mt-4 progressHeight" >
                 <div className="progress-bar bg-info font-weight-bold w-15" role="progressbar" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100">Sketch</div>
+                  aria-valuemin="0" aria-valuemax="100">Python</div>
                 <div className="progress-bar font-weight-bold text-right pr-5 w-35 progressFont" role="progressbar"
                   aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-duration="1800" data-aos-delay="800">50%</div>
               </div>
@@ -200,40 +200,31 @@ function App() {
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <Project title="Dari Learner - iOS" pageLink="https://darilearner.com/" videoLink="https://www.youtube.com/embed/0b-qUiKGy3o" 
+              <Project title="Dari Learner - iOS" pageLink="https://darilearner.com/" videoLink="https://www.youtube.com/embed/C4jrGsz_XH4" 
               infoTitle="Want to Learn some Dari?" 
               infoText="Learn Dari in an exciting educational way. Think of it as the Quizlet of Dari. Dari Learner is a fun, free way of becoming fluent in Dari. Dari Learner makes learning Dari easy, effective, and above all, fun. With tools such as Flashcards and Quizzes, it allows you to build a strong speaking and listening foundation. By tracking your progress, Dari Learner helps you realize how much you have learned while receiving achievements that make practicing a daily habit." 
               infoSecondTitle="Technology" 
               infoSecondText="Dari Learner is a SwiftUI based application that truly utilizes its declarative concept allowing its UI to shine. It utilizes Firebase for Authentication, Storage as well as AdMob. Finally, Dari Learner has it's own API that is uses to retrieve its Vocabulary. The API is built using Flask and is hosted by Heroku."/>
             </div>
             <div className="carousel-item">
-            <Project title="MusoLive Mux Integration - React" pageLink="https://github.com/Farnam0/stream-mux-api" videoLink="https://www.youtube.com/embed/la7Gh9keGig" 
+            <Project title="MusoLive Mux Integration - React" pageLink="https://github.com/Farnam0/stream-mux-api" videoLink="https://www.youtube.com/embed/hv7DdIy-ZbA" 
             infoTitle="About" 
             infoText="MusoLive is an interactive platform for fans to interact with musicians. For my Capstone Project, we created a React based Web Application for this Company that Utilizes Mux for its Streaming and Video Playback functionality. The app allows the user to trim and save video clips at will. For this, we use the Mux API to store and process videos." 
             infoSecondTitle="Technology" 
             infoSecondText="Our Web Application uses ReactJS as its Front End framework which allowed us to soley focus on Figuring out the Mux API and integrating it into our Application. We are using NodeJS, allowing us to use the Official Mux API wrapper, making it a breeze for us to implement."/>
             </div>
-
             <div className="carousel-item">
-            <Project title="Loan Link - iOS" pageLink="https://www.loanlink.io/" videoLink="https://www.youtube.com/embed/UJree24HWx0" 
-            infoTitle="What is LoanLink?" 
-            infoText="LoanLink is an iOS application that allows the user to manage and pay off their student loans all in one place. LoanLink provides a personalized Payoff Plan suited for all types of Student Debt. With its refined algorithms, it can save you money and time." 
-            infoSecondTitle="Technology" 
-            infoSecondText="LoanLink uses both the SwiftUI and UIKit Framework. It uses Firebase for Authentication and Storage. LoanLink incorporates Plaid to keep the security integrity due to never accessing the user's banking information. The loans passed through various algorithms that spit out a customized payment plan for each user, saving them money and time. The user can pay off their loans right in the app."/>
-            </div>
-            <div className="carousel-item">
-            <Project title="MealPickr - Kotlin" pageLink="https://github.com/CSUF-CPSC411-2021F/group-project-team-hypervisor" videoLink="https://www.youtube.com/embed/rUaDIH5ZXB8" 
+            <Project title="MealPickr - Kotlin" pageLink="https://github.com/CSUF-CPSC411-2021F/group-project-team-hypervisor" videoLink="https://youtube.com/embed/dqSXcmuTBd0" 
             infoTitle="What is MealPickr?" 
             infoText="MealPickr is a mobile android application that helps those who cannot find a place to eat. It will take the user’s current location and pick a random restaurant within a given range of the users choice." 
                     infoSecondTitle="Technology" 
                     infoSecondText="MealPickr is a Kotlin based application which utilizes the Maps SDK. It receives it's data straight from the Yelp API."/>
             </div>
             <div className="carousel-item">
-            <Project title="The Mudkips - QT" pageLink="https://github.com/raaamonnn/TheMudkips" videoLink="https://www.youtube.com/embed/vq3NyBt__PE" 
+            <Project title="The Mudkips - QT" pageLink="https://github.com/raaamonnn/TheMudkips" videoLink="https://youtube.com/embed/dedLbTl9RD0" 
             infoTitle="About" 
             infoText="The Mudkips is my final group project for my Datastructures class. As the Scrum Master, it was my resposibility to facilitate scrum to the team by ensuring the scrum framework is followed. The Application's main objective was it to utilize datastructures such as a ordered map as well as efficient algorithms like  the A* algorithm to find  the shortest vacation trip and Kruskal's algorithm to find the minimum spanning tree." />
             </div>
